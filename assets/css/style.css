@@ -1,0 +1,37 @@
+:root {
+    --primary: #1e88e5;
+    --primary-dark: #1565c0;
+    --secondary: #26c6da;
+    --light-bg: #f0f4f8;
+    --card-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+body { background-color: var(--light-bg); font-family: 'Poppins', sans-serif; }
+.sidebar { min-height: 100vh; background: linear-gradient(180deg, #1a237e 0%, #1e88e5 100%); box-shadow: 4px 0 15px rgba(0,0,0,0.15); }
+.sidebar .brand { padding: 20px 15px; border-bottom: 1px solid rgba(255,255,255,0.15); }
+.sidebar .brand h4 { color: #fff; font-weight: 700; margin: 0; font-size: 1.1rem; }
+.sidebar .brand p { color: rgba(255,255,255,0.7); font-size: 0.75rem; margin: 0; }
+.sidebar .nav-link { color: rgba(255,255,255,0.8); padding: 12px 20px; border-radius: 8px; margin: 2px 10px; transition: all 0.2s; display: flex; align-items: center; gap: 10px; }
+.sidebar .nav-link:hover, .sidebar .nav-link.active { background: rgba(255,255,255,0.18); color: #fff; }
+.sidebar .nav-section { color: rgba(255,255,255,0.45); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; padding: 10px 20px 4px; }
+.topbar { background: #fff; padding: 12px 25px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+.stat-card { border: none; border-radius: 16px; box-shadow: var(--card-shadow); overflow: hidden; transition: transform 0.2s; }
+.stat-card:hover { transform: translateY(-3px); }
+.stat-card .icon-box { width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+.stat-card .stat-value { font-size: 1.8rem; font-weight: 700; line-height: 1; }
+.stat-card .stat-label { font-size: 0.8rem; color: #8898aa; }
+.table-card { border: none; border-radius: 16px; box-shadow: var(--card-shadow); }
+.table-card .card-header { background: #fff; border-bottom: 1px solid #e8edf2; padding: 16px 20px; border-radius: 16px 16px 0 0; }
+.table thead th { background: #f8fafc; border-bottom: 2px solid #e8edf2; color: #64748b; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+.badge-diterima  { background: #e3f2fd; color: #1565c0; padding: 5px 10px; border-radius: 20px; font-size: 0.78rem; }
+.badge-diproses  { background: #fff3e0; color: #e65100; padding: 5px 10px; border-radius: 20px; font-size: 0.78rem; }
+.badge-selesai   { background: #e8f5e9; color: #2e7d32; padding: 5px 10px; border-radius: 20px; font-size: 0.78rem; }
+.badge-diambil   { background: #f3e5f5; color: #6a1b9a; padding: 5px 10px; border-radius: 20px; font-size: 0.78rem; }
+.login-page { min-height: 100vh; background: linear-gradient(135deg, #1a237e 0%, #1e88e5 50%, #26c6da 100%); }
+.login-card { border: none; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+.login-brand-icon { width: 72px; height: 72px; background: linear-gradient(135deg, #1e88e5, #26c6da); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto; }
+@media print {
+    body * { visibility: hidden; }
+    .nota-print, .nota-print * { visibility: visible; }
+    .nota-print { position: absolute; left: 0; top: 0; width: 100%; }
+    .no-print { display: none !important; }
+}
